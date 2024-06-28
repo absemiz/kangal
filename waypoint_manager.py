@@ -65,7 +65,7 @@ class WaypointManager:
 			next_waypoint += waypoint_component
 			
 			angle_iterator += angle_increment
-		next_waypoint = 1.0 * next_waypoint.unit()
+		next_waypoint = 2.0 * next_waypoint.unit()
 		on_next_point_evaluated(next_waypoint)
 		
 	def globalize(self, local_vector: Vector3) -> Tuple[ROSPoint, ROSQuaternion]:
